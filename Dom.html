@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="DOM.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+
+        .underline {
+            text-decoration: underline;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .normal {
+            text-decoration: none;
+            font-weight: normal;
+            background-color: white;
+        }
+
+        .disabled {
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p id="text">this is a simple paragraph</p>
+        <input type="text" id="classinput" placeholder="enter a class name">
+        <button onclick="addClass()">Add Class</button>
+    </div>
+    <br>
+    <container>
+        <p id="p1">this is paragraph 1</p>
+        <p id="p2">this is paragraph 2</p>
+        <p id="p3">this is paragraph 3</p>
+        <button onclick="deleteOrRestoreP1()">click to vanish|restore paragraph 1</button>
+        <button onclick="deleteOrRestoreP2()">click to vanish|restore paragraph 2</button>
+        <button onclick="deleteOrRestoreP3()">click to vanish|restore paragraph 3</button>
+    </container>
+    <br>
+    <div>
+        <button id="clicked" onclick="clicked()">click me</button>
+    </div>
+</body>
+
+</html>
